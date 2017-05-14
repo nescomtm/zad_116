@@ -9,7 +9,7 @@ $(function() {
     return str;
   }
 
-  function Column(name) {
+  function Column(name){
     var self = this; // przyda się dla funkcji zagnieżdżonych
 
     this.id = randomString();
@@ -28,9 +28,10 @@ $(function() {
       $columnDelete.click(function() {
         self.removeColumn();
       });
+
       //Dodawanie karteczki po kliknięciu w przycisk:
       $columnAddCard.click(function() {
-              self.addCard(new Card(prompt("Wpisz nazwę karty")));
+              self.addCard(new card(prompt("Wpisz nazwę karty")));
       });
 
       $column.append($columnTitle)
@@ -42,22 +43,24 @@ $(function() {
       $card.append($cardDelete)
         .append($cardDescription);
       return $card;
-
     } //koniec createColumn
+  } //koniec Column
 
-    Column.prototype = {
+  Column.prototype = {
       addCard: function(card) {
         this.$element.children('ul').append(card.$element);
       },
       removeColumn: function() {
         this.$element.remove();
       }
-      //this.$element.children('ul').append(card.$element);
-    };
+  }; // koniec Column.prototype
 
-    this.$element.children('ul').append(card.$element);
 
-    function Card(description) {
+  function addCard(){
+        this.$element.children('ul').append(card.$element);
+  }
+
+  function card(description) {   // Card zmieniłem na card
       var self = this;
       this.id = randomString();
       this.description = description;
@@ -71,7 +74,7 @@ $(function() {
 
         // PRZYPIĘCIE ZDARZENIA
         $cardDelete.click(function(){
-                  self.removeCard();
+          self.removeCard();
         });
 
         // SKŁADANIE I ZWRACANIE KARTY
@@ -79,31 +82,15 @@ $(function() {
             .append($cardDescription);
 
           return $card;
-
-          
-
         } // koniec createCard
 
         //  metoda dla klasy Card
-        Card.prototype = {
+        card.prototype = {                 // zmieniłe Card. na card.
             removeCard: function() {
               this.$element.remove();
             }
           }
-
     }  // koniec Card
-
-    $cardDelete.click(function(){
-        self.removeCard();
-    });
-
-    $card.append($cardDelete)
-	    .append($cardDescription);
-    return $card;
-
-    
-
-  } //koniec Column
 
 var board = {
     name: 'Tablica Kanban',
@@ -144,8 +131,8 @@ board.addColumn(doingColumn);
 board.addColumn(doneColumn);
 
 // TWORZENIE NOWYCH EGZEMPLARZY KART
-var card1 = new Card('Nowe zadanie');
-var card2 = new Card('Stworzyc tablice kanban');
+var card1 = new card('Nowe zadanie');
+var card2 = new card('Stworzyc tablice kanban');
 
 // DODAWANIE KART DO KOLUMN
 todoColumn.addCard(card1);
