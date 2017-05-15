@@ -1,6 +1,6 @@
-.card-description, .column-title {
+.card-description, .column-title, .column {
     border: 1px dotted;
-    width: 150px;
+    width: 100px;
     text-align: center;
     box-shadow: 2px 2px 2px;
     background-color: lightcoral;
@@ -9,13 +9,45 @@
 
 .column-title {
     background-color: lightblue;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.card-description {
+    width: 50%;
+    margin: 15px auto;
+    float: left;
+}
+
+.create-column {
+    margin: 0 auto;
+    width: 20%;
 }
 
 h1 {
     background-color: whitesmoke;
     font-style: bold;
     border: 1px dotted;
-    width: 150px;
+    
     text-align: center;
     box-shadow: 4px 4px 4px;
+    
+    margin: 50px auto;
+    width: 20%;
+
+}
+
+.btn-delete {
+    margin: 0 auto;
+    width: 15%;
+    float: initial;
+}
+
+.column {
+     background-color: white; 
+     text-align: center;   
+     width: 20%;
+     float: left;
+     margin: 3%;
+     padding: 20px 20px 20px 20px;
 }
