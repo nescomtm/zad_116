@@ -80,17 +80,18 @@ $(function() {
         // SKŁADANIE I ZWRACANIE KARTY
         $card.append($cardDelete)
             .append($cardDescription);
+            return $card;
+     } // koniec createCard
 
-          return $card;
-        } // koniec createCard
+        
+    }  // koniec Card
 
-        //  metoda dla klasy Card
+//  metoda dla klasy Card
         card.prototype = {                 // zmieniłe Card. na card.
             removeCard: function() {
               this.$element.remove();
             }
           }
-    }  // koniec Card
 
 var board = {
     name: 'Tablica Kanban',
@@ -140,4 +141,3 @@ doingColumn.addCard(card2);
 
 //koniec  
 });
-

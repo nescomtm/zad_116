@@ -1,0 +1,21 @@
+.card-description, .column-title {
+    border: 1px dotted;
+    width: 150px;
+    text-align: center;
+    box-shadow: 2px 2px 2px;
+    background-color: lightcoral;
+    font-style: italic;
+}
+
+.column-title {
+    background-color: lightblue;
+}
+
+h1 {
+    background-color: whitesmoke;
+    font-style: bold;
+    border: 1px dotted;
+    width: 150px;
+    text-align: center;
+    box-shadow: 4px 4px 4px;
+}
