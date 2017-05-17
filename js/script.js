@@ -99,7 +99,7 @@ $(function() {
     $element: $('#board .column-container')
   };
 
-  $('#board .column-container');
+  //$('#board .column-container');
 
   function initSortable() {
     $('.column-card-list').sortable({
@@ -131,10 +131,13 @@ $(function() {
   // TWORZENIE NOWYCH EGZEMPLARZY KART
   var card1 = new Card('Nowe zadanie');
   var card2 = new Card('Stworzyc tablice kanban');
+  var card3 = new Card('Zadania skonczone');
 
   // DODAWANIE KART DO KOLUMN
   todoColumn.addCard(card1);
   doingColumn.addCard(card2);
+  doneColumn.addCard(card3);
+
 
   //koniec  
 });

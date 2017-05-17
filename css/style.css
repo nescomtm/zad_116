@@ -1,27 +1,76 @@
-.card-description, .column-title, .column {
-    border: 1px dotted;
-    width: 100px;
-    text-align: center;
+li {
+    list-style: none;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-placeholder {
+    background-color: black;
+    height: 30px;
+}
+
+.column {
     box-shadow: 2px 2px 2px;
-    background-color: lightcoral;
-    font-style: italic;
+    margin: 0 0 0 10%;
+    border: 1px dotted;
+    background-color: white; 
+    text-align: center;   
+    width: 20%;
+    
+    float: left;
+    /* margin: 15px;
+     /*padding: 20px 20px 20px 20px; */
+}
+
+.column-card-list {
+    height: 150px;
 }
 
 .column-title {
     background-color: lightblue;
-    width: 60%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0;
+       /* margin: 0 auto; */
+    border: 1px dotted;
 }
 
 .card-description {
+    border: 1px dotted;
     width: 50%;
-    margin: 15px auto;
+    text-align: center;
+    box-shadow: 2px 2px 2px;
+    background-color: lightcoral;
+    margin: 50px 0 20px 0;
+    font-style: italic;
+    
+
+   /* margin: 15px auto; */
+}
+
+card {
     float: left;
 }
 
+.card > .btn-delete {
+    float: right;
+}
+
+/* button dodaj kolumne */
 .create-column {
-    margin: 0 auto;
-    width: 20%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0 20px 45%;
+      
+}
+
+.add-card, .btn-delete {
+    margin: 10px 0 0 0;
+    float: left;
+
 }
 
 h1 {
@@ -32,22 +81,9 @@ h1 {
     text-align: center;
     box-shadow: 4px 4px 4px;
     
-    margin: 50px auto;
+    margin: 10px auto;
+   /*  margin-left: 40%; */
     width: 20%;
 
 }
 
-.btn-delete {
-    margin: 0 auto;
-    width: 15%;
-    float: initial;
-}
-
-.column {
-     background-color: white; 
-     text-align: center;   
-     width: 20%;
-     float: left;
-     margin: 3%;
-     padding: 20px 20px 20px 20px;
-}
