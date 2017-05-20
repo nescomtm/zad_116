@@ -1,6 +1,5 @@
 li {
     list-style: none;
-
 }
 
 ul {
@@ -20,10 +19,7 @@ ul {
     background-color: white; 
     text-align: center;   
     width: 20%;
-    
     float: left;
-    /* margin: 15px;
-     /*padding: 20px 20px 20px 20px; */
 }
 
 .column-card-list {
@@ -46,12 +42,9 @@ ul {
     background-color: lightcoral;
     margin: 50px 0 20px 0;
     font-style: italic;
-    
-
-   /* margin: 15px auto; */
 }
 
-card {
+.card {
     float: left;
 }
 
@@ -70,20 +63,17 @@ card {
 .add-card, .btn-delete {
     margin: 10px 0 0 0;
     float: left;
-
 }
 
 h1 {
     background-color: whitesmoke;
-    font-style: bold;
+    font-weight: bold;
     border: 1px dotted;
     
     text-align: center;
     box-shadow: 4px 4px 4px;
     
     margin: 10px auto;
-   /*  margin-left: 40%; */
     width: 20%;
-
 }
 

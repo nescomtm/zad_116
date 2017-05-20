@@ -55,11 +55,6 @@ $(function() {
     }
   }; // koniec Column.prototype
 
-// zabłaka funkcja ??
- // function addCard(){
- //       this.$element.children('ul').append(card.$element);
- // }  
-
   function Card(description) {   // Card zmieniłem na card
     var self = this;
     this.id = randomString();
@@ -99,18 +94,12 @@ $(function() {
     $element: $('#board .column-container')
   };
 
-  //$('#board .column-container');
-
   function initSortable() {
     $('.column-card-list').sortable({
       connectWith: '.column-card-list',
       placeholder: 'card-placeholder'
     }).disableSelection();
   }
-
-  $('.column-card-list');
-
-  $('.column-card-list').sortable();
 
   $('.create-column').click(function(){
     var name = prompt('Wpisz nazwę kolumny');
@@ -137,7 +126,5 @@ $(function() {
   todoColumn.addCard(card1);
   doingColumn.addCard(card2);
   doneColumn.addCard(card3);
-
-
   //koniec  
 });
